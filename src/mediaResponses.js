@@ -32,6 +32,7 @@ const loadFile = (request, response, fileLocation, headerContentType) => {
       range = 'bytes=0-';
     }
 
+    // Calculate the number of bytes in the file request
     const positions = range.replace(/bytes=/, '').split('-');
     let start = parseInt(positions[0], 10);
     const total = stats.size;
@@ -57,14 +58,17 @@ const loadFile = (request, response, fileLocation, headerContentType) => {
   });
 };
 
+// GET: ~/party.mp4
 const getParty = (request, response) => {
   loadFile(request, response, '../client/party.mp4', 'video/mp4');
 };
 
+// GET: ~/bling.mp3
 const getBling = (request, response) => {
   loadFile(request, response, '../client/bling.mp3', 'audio/mpeg');
 };
 
+// GET: ~/bird.mp4
 const getBird = (request, response) => {
   loadFile(request, response, '../client/bird.mp4', 'video/mp4');
 };
