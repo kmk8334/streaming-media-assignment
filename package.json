@@ -1,0 +1,26 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "Streaming large media files",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmk8334/streaming-media-assignment.git"
+  },
+  "author": "Kevin Kulp",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/kmk8334/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/kmk8334/streaming-media-assignment#readme",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
